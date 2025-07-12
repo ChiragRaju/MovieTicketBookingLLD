@@ -8,7 +8,7 @@ namespace MovieTicketBookingSystem.Models
         public int Row { get; }
         public int Column { get; }
         public SeatStatus Status { get; set; }
-        public SeatType Type { get; }
+        public SeatType SeatType { get; }
         public double Price { get; }
 
         public Seat(string id, int row, int column, SeatStatus status, SeatType type, double price)
@@ -17,7 +17,7 @@ namespace MovieTicketBookingSystem.Models
             Row = row;
             Column = column;
             Status = status;
-            Type = type;
+            SeatType = type;
             Price = price;
         }
     }
